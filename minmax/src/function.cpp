@@ -11,9 +11,55 @@
  */
 
 std::pair<int,int> min_max( int V[], size_t n )
-{
-    // TODO: Adicione aqui sua solução.
+  {
+    int i;
+    int min;
+    int max;
+    int pmin = 0;
+    int pmax = 0;
+  
+    min = V[0];
+    max = V[0];
+    
+    for(i = 0; i <n; i++){
+      if (V[i] < min){
+        min = V[i];
+        pmin = i;
+      }
+      else {
+        if (V[i] >= max){
+          max = V[i];
+          pmax = i;
+        }
+      }
+    }
+  
+    return std::make_pair( pmin, pmax);
+    
+  }
 
-    // TODO: Isso é apenas um STUB. Substitua com seu retorno correto.
-    return { -1, -1 };
+
+int main(void){
+
+  size_t n = 0;
+  int x;
+  int i = 0;
+  int  V[20];
+  pair<int, int> resultado;
+
+  while (cin >> std::ws >> x){
+    V[i] = x;
+    n = n + 1;
+    i++;
+  }
+  
+  resultado = min_max( V, n );
+  
+  
+  cout  << resultado.first << " " << resultado.second; 
+  
+
+  
+
+  return 0;
 }
