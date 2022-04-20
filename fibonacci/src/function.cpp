@@ -18,10 +18,6 @@ std::vector<unsigned int> fib_below_n( unsigned int n ){
           tam++;
       }
 
-      for (i = 0; i < tam; i++){
-        cout << vetor[i] << " ";
-      }
-
         return vetor;
  
 }

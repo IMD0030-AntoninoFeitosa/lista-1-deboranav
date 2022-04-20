@@ -41,12 +41,12 @@ int main(void)
     }
     
   }
-
-  porcent1 = (100* float (intervalo1) )/cont;
-  porcent2 = (100* float (intervalo2) )/cont;
-  porcent3 = (100* float (intervalo3) )/cont;
-  porcent4 = (100* float (intervalo4) )/cont;
-  porcentFI = (100* float (foraint) )/cont;
+  
+  porcent1 = (100* static_cast<float>(intervalo1) )/cont;
+  porcent2 = (100* static_cast<float>(intervalo2) )/cont;
+  porcent3 = (100* static_cast<float>(intervalo3) )/cont;
+  porcent4 = (100* static_cast<float>(intervalo4) )/cont;
+  porcentFI = (100* static_cast<float>(foraint) )/cont;
 
 
   cout << setprecision(4) << porcent1 << endl; 
