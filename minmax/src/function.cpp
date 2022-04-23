@@ -39,27 +39,3 @@ std::pair<int,int> min_max( int V[], size_t n )
   }
 
 
-int main(void){
-
-  size_t n = 0;
-  int x;
-  int i = 0;
-  int  V[20];
-  pair<int, int> resultado;
-
-  while (cin >> std::ws >> x){
-    V[i] = x;
-    n = n + 1;
-    i++;
-  }
-  
-  resultado = min_max( V, n );
-  
-  
-  cout  << resultado.first << " " << resultado.second; 
-  
-
-  
-
-  return 0;
-}
